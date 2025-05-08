@@ -12,7 +12,10 @@ export const Assignment3 = () => {
     ]);
 
     // Your code starts here
-    const totalValue = 0;
+    let totalValue = items.reduce((acc, x) => acc + x.value, 0)
+    // items.map((item) => {
+    //     totalValue = item.value + totalValue;
+    // })
     // Your code ends here
     return (
         <div>
